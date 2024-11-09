@@ -5,7 +5,7 @@ async def start_strongman(name, power):
 
     print(f'Силач {name} начал соревнования')
     for power in range(1,6):
-        await asyncio.sleep(power)
+        await asyncio.sleep(6-power)
         print(f'Силач {name} поднял {power}')
     print(f'Силач {name} закончил соревнования.')
 
